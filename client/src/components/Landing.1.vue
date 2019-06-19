@@ -100,7 +100,11 @@
                   type="is-dark"
                   v-if="$store.state.isUserLoggedIn && !$store.state.subscribedShows.includes(selected.id)"
                 >Add to my list</b-button>
-                <b-button @click="remove(selected.id)" type="is-dark" v-else-if="$store.state.isUserLoggedIn">Remove from my list</b-button>
+                <b-button
+                  @click="remove(selected.id)"
+                  type="is-dark"
+                  v-else-if="$store.state.isUserLoggedIn"
+                >Remove from my list</b-button>
               </div>
             </div>
           </div>
@@ -274,13 +278,13 @@ h2 {
   max-width: 600px;
 }
 .no-bottom-padding {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 .no-top-padding {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 .bottom-box {
-  border-radius: 0;
+  border-radius: 0 !important;
   box-shadow: 0 !important;
 }
 .top-box {
