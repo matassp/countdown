@@ -324,4 +324,9 @@ img {
 .countdown {
   max-width: 55px;
 }
+.no-border,
+.no-border:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
 </style>
