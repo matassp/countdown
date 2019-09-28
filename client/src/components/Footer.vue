@@ -7,7 +7,7 @@
       </p>
       <p>
         <strong>Countdown</strong> by
-        <a href="https://jgthms.com">Matas</a>. The source code is licensed
+        <a href="https://github.com/matassp">Matas</a>. The source code is licensed
         <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
         is licensed
         <a
