@@ -34,16 +34,16 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             validate: {
                 length(value) {
-                    if (!validator.isLength(value, { min: 8, max: 32 }))
+                    if (!validator.isLength(value, { min: 1, max: 32 }))
                         throw new Error('Password should be between 8 and 32 characters long')
                 }
             }
         }
     }, {
-            hooks: {
-                beforeCreate: hashPassword
-            }
-        })
+        hooks: {
+            beforeCreate: hashPassword
+        }
+    })
 
     User.prototype.comparePassword = async function (password) {
         return bcrypt.compareAsync(password, this.password)
